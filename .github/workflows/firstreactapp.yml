@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: FirstReactapp
+name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -32,7 +32,7 @@ jobs:
       with: 
         cmd: install
       #Build React app with Yarn
-    - name: Build App
+    - name: Build app
       run: yarn build
       
       #Install Surge
